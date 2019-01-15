@@ -32,7 +32,7 @@ class Lesson(models.Model):
         verbose_name = u"章节"
         verbose_name_plural = verbose_name
 
-
+#章节
 class Video(models.Model):
     lesson = models.ForeignKey(Lesson, verbose_name=u"章节")
     name = models.CharField(max_length=100, verbose_name=u"视频名")
